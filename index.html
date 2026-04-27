@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Yuuzenflow — Massothérapie à Montréal. Massage Suédois. Prenez soin de vous.">
+<title>Yuuzenflow · Massothérapie Montréal</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+
+- { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+body {
+font-family: ‘Raleway’, Georgia, serif;
+font-weight: 300;
+background: #faf7f4;
+color: #2a2420;
+overflow-x: hidden;
+}
+
+/* NAV */
+nav {
+position: fixed;
+top: 0; left: 0; right: 0;
+z-index: 100;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 32px;
+background-color: #faf7f4;
+background: #faf7f4;
+border-bottom: 1px solid rgba(200,189,176,0.4);
+}
+.nav-logo {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-weight: 300;
+font-size: 20px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: #2c3e35;
+text-decoration: none;
+}
+.nav-book {
+font-size: 10px;
+letter-spacing: 0.25em;
+text-transform: uppercase;
+color: #faf7f4;
+background: #2c3e35;
+padding: 10px 20px;
+text-decoration: none;
+}
+
+/* HERO */
+.hero {
+background-color: #2c3e35 !important;
+background: #2c3e35 !important;
+padding: 130px 32px 72px;
+text-align: center;
+}
+.hero-eyebrow {
+font-size: 9px;
+letter-spacing: 0.5em;
+text-transform: uppercase;
+color: #a89880;
+margin-bottom: 20px;
+}
+.hero-wave { margin: 0 auto 28px; display: block; }
+.hero-title {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-weight: 300;
+font-size: 50px;
+line-height: 1.08;
+color: #f5f0eb;
+margin-bottom: 24px;
+}
+.hero-title em { font-style: italic; color: #c8bdb0; }
+.hero-desc {
+font-size: 13px;
+line-height: 1.9;
+color: rgba(232,221,208,0.75);
+max-width: 400px;
+margin: 0 auto 36px;
+}
+.hero-desc-en {
+display: block;
+margin-top: 10px;
+font-size: 11px;
+color: rgba(168,152,128,0.7);
+}
+.hero-btns { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.hero-btn {
+display: block;
+width: 240px;
+padding: 16px 0;
+background: #c8bdb0;
+color: #2c3e35;
+font-size: 10px;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+text-decoration: none;
+text-align: center;
+}
+.hero-btn-ghost {
+display: block;
+width: 240px;
+padding: 16px 0;
+border: 1px solid rgba(168,152,128,0.5);
+color: #c8bdb0;
+font-size: 10px;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+text-decoration: none;
+text-align: center;
+}
+.hero-stats {
+display: flex;
+justify-content: center;
+gap: 48px;
+margin-top: 52px;
+padding-top: 36px;
+border-top: 1px solid rgba(168,152,128,0.15);
+}
+.stat-num {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: 36px;
+font-weight: 300;
+color: #c8bdb0;
+line-height: 1;
+}
+.stat-lbl {
+font-size: 8px;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+color: #a89880;
+margin-top: 6px;
+}
+
+/* INTRO */
+.section {
+padding: 72px 32px;
+text-align: center;
+}
+.section-bg { background-color: #f5f0eb !important; background: #f5f0eb !important; }
+.section-dark { background-color: #2c3e35 !important; background: #2c3e35 !important; }
+.eyebrow {
+font-size: 9px;
+letter-spacing: 0.5em;
+text-transform: uppercase;
+color: #a89880;
+margin-bottom: 14px;
+}
+.title {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-weight: 300;
+font-size: 38px;
+line-height: 1.2;
+color: #2c3e35;
+margin-bottom: 20px;
+}
+.title-light { color: #f5f0eb; }
+.title em { font-style: italic; color: #a89880; }
+.title-light em { color: #c8bdb0; }
+.divider {
+width: 36px; height: 1px;
+background: #a89880;
+margin: 0 auto 24px;
+}
+.body-text {
+font-size: 14px;
+line-height: 2;
+color: #8a7a6a;
+max-width: 480px;
+margin: 0 auto 14px;
+}
+.body-text-light {
+font-size: 14px;
+line-height: 2;
+color: rgba(232,221,208,0.65);
+max-width: 480px;
+margin: 0 auto 14px;
+}
+.btn {
+display: inline-block;
+padding: 14px 36px;
+background: #2c3e35;
+color: #f5f0eb;
+font-size: 10px;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+text-decoration: none;
+margin-top: 16px;
+}
+.btn-sand {
+background: #c8bdb0;
+color: #2c3e35;
+padding: 18px 48px;
+font-size: 11px;
+}
+
+/* SERVICE CARD */
+.service-card {
+background: rgba(255,255,255,0.05);
+border: 1px solid rgba(168,152,128,0.2);
+padding: 40px 28px;
+margin: 28px auto 0;
+max-width: 480px;
+}
+.svc-name {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-weight: 300;
+font-size: 30px;
+color: #f5f0eb;
+margin: 20px 0 6px;
+}
+.svc-en {
+font-size: 9px;
+letter-spacing: 0.35em;
+text-transform: uppercase;
+color: #a89880;
+margin-bottom: 18px;
+}
+.svc-desc {
+font-size: 13px;
+line-height: 1.9;
+color: rgba(232,221,208,0.65);
+margin-bottom: 28px;
+}
+.prices {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 28px;
+}
+.price-val {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: 34px;
+font-weight: 300;
+color: #c8bdb0;
+}
+.price-dur {
+font-size: 9px;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+color: #a89880;
+margin-top: 4px;
+}
+.price-sep {
+width: 1px; height: 44px;
+background: rgba(168,152,128,0.25);
+}
+
+/* ABOUT CIRCLE */
+.about-circle {
+width: 180px; height: 180px;
+border-radius: 50%;
+background: #2c3e35;
+margin: 0 auto 36px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 8px;
+}
+.about-circle .brand {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: 14px;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+color: #f5f0eb;
+}
+.about-circle .sub {
+font-size: 7px;
+letter-spacing: 0.28em;
+text-transform: uppercase;
+color: #a89880;
+}
+.values {
+list-style: none;
+margin: 28px auto 0;
+max-width: 340px;
+text-align: left;
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+.values li {
+font-size: 13px;
+color: #8a7a6a;
+padding-left: 22px;
+position: relative;
+line-height: 1.5;
+}
+.values li::before { content: ‘—’; position: absolute; left: 0; color: #a89880; }
+
+/* TESTIMONIALS */
+.tcard {
+background: #fff;
+border: 1px solid rgba(200,189,176,0.5);
+padding: 32px 24px;
+margin: 20px auto 0;
+max-width: 480px;
+text-align: left;
+}
+.stars { color: #a89880; font-size: 13px; margin-bottom: 14px; letter-spacing: 3px; }
+.ttext {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-style: italic;
+font-size: 17px;
+line-height: 1.6;
+color: #2c3e35;
+margin-bottom: 18px;
+}
+.tname { font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: #8a7a6a; }
+.tloc { font-size: 9px; letter-spacing: 0.2em; color: #a89880; margin-top: 4px; }
+
+/* BOOKING */
+.booking-title {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-weight: 300;
+font-size: 42px;
+color: #f5f0eb;
+line-height: 1.1;
+margin-bottom: 18px;
+}
+.booking-title em { font-style: italic; color: #c8bdb0; }
+.booking-sub {
+font-size: 13px;
+line-height: 1.9;
+color: rgba(232,221,208,0.6);
+margin-bottom: 36px;
+}
+.booking-info {
+display: flex;
+justify-content: center;
+gap: 28px;
+flex-wrap: wrap;
+margin-top: 36px;
+}
+.bval {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: 20px;
+color: #c8bdb0;
+}
+.bkey { font-size: 8px; letter-spacing: 0.3em; text-transform: uppercase; color: #a89880; margin-top: 4px; }
+
+/* FOOTER */
+footer {
+background-color: #1a2620 !important;
+background: #1a2620 !important;
+padding: 52px 32px 28px;
+text-align: center;
+}
+.footer-logo {
+font-family: ‘Cormorant Garamond’, Georgia, serif;
+font-size: 24px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: #f5f0eb;
+margin-bottom: 14px;
+}
+.footer-tag {
+font-size: 12px;
+line-height: 1.8;
+color: rgba(168,152,128,0.65);
+margin-bottom: 32px;
+}
+.footer-sep { width: 36px; height: 1px; background: rgba(168,152,128,0.25); margin: 0 auto 28px; }
+.footer-links { display: flex; flex-direction: column; gap: 10px; margin-bottom: 32px; }
+.footer-links a {
+font-size: 12px;
+color: rgba(168,152,128,0.7);
+text-decoration: none;
+letter-spacing: 0.08em;
+}
+.footer-copy { font-size: 9px; letter-spacing: 0.12em; color: rgba(168,152,128,0.3); }
+</style>
+
+</head>
+<body>
+
+<!-- NAV -->
+
+<nav>
+  <a href="#" class="nav-logo">Yuuzenflow</a>
+  <a href="https://calendly.com/yuuzenflow" target="_blank" class="nav-book">Réserver</a>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+  <p class="hero-eyebrow">Massothérapie · Montréal</p>
+  <svg class="hero-wave" width="72" height="24" viewBox="0 0 72 24" fill="none">
+    <path d="M2 12 C10 2, 18 2, 24 12 C30 22, 42 22, 48 12 C54 2, 62 2, 70 12" stroke="#a89880" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <path d="M2 18 C10 8, 18 8, 24 18 C30 24, 42 24, 48 18 C54 8, 62 8, 70 18" stroke="#a89880" stroke-width="0.6" fill="none" stroke-linecap="round" opacity="0.4"/>
+  </svg>
+  <h1 class="hero-title">Retrouvez<br>votre <em>équilibre</em><br>intérieur</h1>
+  <p class="hero-desc">
+    Des soins personnalisés pour libérer les tensions, apaiser l'esprit et revitaliser le corps — au cœur de Montréal.
+    <span class="hero-desc-en">Personalized massage therapy to release tension, calm the mind, and restore the body.</span>
+  </p>
+  <div class="hero-btns">
+    <a href="https://calendly.com/yuuzenflow" target="_blank" class="hero-btn">Prendre rendez-vous</a>
+    <a href="#services" class="hero-btn-ghost">Nos soins</a>
+  </div>
+  <div class="hero-stats">
+    <div>
+      <div class="stat-num">150</div>
+      <div class="stat-lbl">Clients satisfaits</div>
+    </div>
+    <div>
+      <div class="stat-num">1</div>
+      <div class="stat-lbl">An d'expérience</div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+
+<section class="section">
+  <p class="eyebrow">Notre approche · Our approach</p>
+  <h2 class="title">Un soin,<br>une <em>présence</em></h2>
+  <div class="divider"></div>
+  <p class="body-text">Chez Yuuzenflow, chaque séance est une invitation à ralentir. Notre approche allie techniques rigoureuses et attention profonde pour chaque client.</p>
+  <p class="body-text">At Yuuzenflow, each session is an invitation to slow down — rigorous technique meets deep personal attention.</p>
+  <a href="https://calendly.com/yuuzenflow" target="_blank" class="btn">Réserver une séance</a>
+</section>
+
+<!-- SERVICES -->
+
+<section class="section section-dark" id="services">
+  <p class="eyebrow">Notre soin · Our service</p>
+  <h2 class="title title-light">Massage <em>Suédois</em></h2>
+  <div class="service-card">
+    <svg width="40" height="24" viewBox="0 0 40 24" fill="none">
+      <path d="M2 12 C8 2, 14 2, 20 12 C26 22, 32 22, 38 12" stroke="#a89880" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+      <path d="M2 18 C8 8, 14 8, 20 18 C26 24, 32 24, 38 18" stroke="#a89880" stroke-width="0.6" fill="none" stroke-linecap="round" opacity="0.4"/>
+    </svg>
+    <div class="svc-name">Massage Suédois</div>
+    <div class="svc-en">Swedish Massage</div>
+    <p class="svc-desc">Le massage suédois favorise la détente profonde, améliore la circulation et libère les tensions musculaires. Chaque séance est adaptée à vos besoins du moment.<br><br><em style="font-style:normal;font-size:11px;">Swedish massage promotes deep relaxation, improves circulation, and relieves muscle tension — tailored to your needs.</em></p>
+    <div class="prices">
+      <div>
+        <div class="price-val">80$</div>
+        <div class="price-dur">60 min</div>
+      </div>
+      <div class="price-sep"></div>
+      <div>
+        <div class="price-val">110$</div>
+        <div class="price-dur">90 min</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="section section-bg" id="about">
+  <div class="about-circle">
+    <svg width="40" height="24" viewBox="0 0 40 24" fill="none">
+      <path d="M2 12 C8 2, 14 2, 20 12 C26 22, 32 22, 38 12" stroke="#a89880" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    </svg>
+    <div class="brand">Yuuzenflow</div>
+    <div class="sub">Montréal · QC</div>
+  </div>
+  <p class="eyebrow">À propos · About</p>
+  <h2 class="title">Une thérapeute<br>à votre <em>écoute</em></h2>
+  <div class="divider"></div>
+  <p class="body-text">Massothérapeute certifiée basée à Montréal, je crois profondément que chaque corps a sa propre histoire. Mon rôle est de l'écouter et d'y répondre avec précision et bienveillance.</p>
+  <p class="body-text">As a certified massage therapist in Montreal, I believe every body tells its own story. My role is to listen, understand, and respond with precision and care.</p>
+  <ul class="values">
+    <li>Massothérapeute certifiée</li>
+    <li>Approche bilingue français / anglais</li>
+    <li>Espace calme et accueillant</li>
+    <li>Produits naturels et écoresponsables</li>
+    <li>Séances adaptées à chaque personne</li>
+  </ul>
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section class="section" id="avis">
+  <p class="eyebrow">Témoignages · Reviews</p>
+  <h2 class="title">Ce que disent<br><em>nos clients</em></h2>
+  <div class="tcard">
+    <div class="stars">★★★★★</div>
+    <p class="ttext">"Une expérience transformatrice. Je suis ressortie complètement différente — légère, détendue, apaisée."</p>
+    <div class="tname">Sophie L.</div>
+    <div class="tloc">Plateau-Mont-Royal, Montréal</div>
+  </div>
+  <div class="tcard">
+    <div class="stars">★★★★★</div>
+    <p class="ttext">"Best massage I've had in Montreal. Professional, attentive, and genuinely therapeutic. I'll be back every month."</p>
+    <div class="tname">James M.</div>
+    <div class="tloc">Mile End, Montréal</div>
+  </div>
+  <div class="tcard">
+    <div class="stars">★★★★★</div>
+    <p class="ttext">"Mes douleurs chroniques au dos ont considérablement diminué après seulement 3 séances. Je recommande fortement."</p>
+    <div class="tname">Marie-Ève T.</div>
+    <div class="tloc">Rosemont, Montréal</div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+
+<section class="section section-dark" id="booking">
+  <p class="eyebrow">Prendre rendez-vous · Book now</p>
+  <h2 class="booking-title">Offrez-vous un<br>moment <em>pour vous</em></h2>
+  <p class="booking-sub">Montréal, Québec<br>Séances en français et en anglais · FR / EN</p>
+  <a href="https://calendly.com/yuuzenflow" target="_blank" class="btn btn-sand">Réserver maintenant</a>
+  <div class="booking-info">
+    <div>
+      <div class="bval">Lun–Sam</div>
+      <div class="bkey">Disponibilités</div>
+    </div>
+    <div>
+      <div class="bval">9h–20h</div>
+      <div class="bkey">Horaires</div>
+    </div>
+    <div>
+      <div class="bval">FR/EN</div>
+      <div class="bkey">Bilingue</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer id="contact">
+  <div class="footer-logo">Yuuzenflow</div>
+  <p class="footer-tag">Massothérapie à Montréal — des soins qui transforment corps et esprit.</p>
+  <div class="footer-sep"></div>
+  <div class="footer-links">
+    <a href="tel:+14383378459">(438) 337-8459</a>
+    <a href="mailto:yuuzenflow@gmail.com">yuuzenflow@gmail.com</a>
+    <a href="https://instagram.com/yuuzenflow" target="_blank">@yuuzenflow sur Instagram</a>
+    <a href="https://calendly.com/yuuzenflow" target="_blank">Réserver sur Calendly</a>
+  </div>
+  <p class="footer-copy">© 2026 Yuuzenflow · Massothérapie Montréal · Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
